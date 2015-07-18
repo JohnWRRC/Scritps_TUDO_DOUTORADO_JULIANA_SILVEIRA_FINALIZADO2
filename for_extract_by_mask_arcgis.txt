@@ -1,0 +1,13 @@
+import arcpy
+from arcpy import env
+import os
+
+
+env.workspace = r"F:\data\Juliana_inpe\Ju"
+fcList = arcpy.ListFeatureClasses ()
+mosaic=fcList[-1]
+del fcList[-1]
+
+for fc in fcList:
+	ofile2=unicode(""+os.path.splitext(fc)[0]+"_class.shp")
+	arcpy.Clip_analysis(mosaic, fc, ofile2, "")

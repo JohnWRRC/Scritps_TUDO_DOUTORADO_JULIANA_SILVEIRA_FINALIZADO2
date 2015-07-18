@@ -1,0 +1,3150 @@
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................
+while(i<10000)
+{print(i)
+ temp = dados[sample(nrow(dados),30, replace=TRUE),];
+ aleat<-runif(n=nrow(temp))
+ x<-temp$Perm_Final
+ y<-temp$Conec_AF
+ cut1.perm<- mean(x)
+ modelo.lm<-try(glm(y~x, data=temp))
+ modelo.segmented<-try(segmented(modelo.lm,seg.Z=~x,psi=list(x=c(cut1.perm)),
+                                 control=seg.control(display=F)))
+ modelo.nulo<-try(glm(temp$Conec_AF~temp$aleatorio))
+ if (all(class(modelo.segmented)!="try-error", class(modelo.nulo)!="try-error", class(modelo.lm)!="try-error")){
+  ICtab_fora= ICtab(modelo.segmented, modelo.lm, modelo.nulo,type="AICc", weights=T, base=T, nobs=nrow(temp))
+  out = attributes(ICtab_fora)
+  win_list = out$row.names
+  win = win_list[1] 
+  output[[i]] = win
+  i=i+1
+ }
+}
+#..................................................................................................................................................................

@@ -1,0 +1,54 @@
+### Paisagem com as pastas (HM) habitat matriz
+
+Primeiro ele entra em cada pasta do grass e soma as imagens com padrão sem 0
+
+Script SOMA:
+
+g.region rast=Custo_Pai18_ab_h_m_tif res=28.5
+corredores=`g.mlist pattern='*sem0' sep="comma"`
+r.series input=$corredores output=corredores_18_sum_ab_h_m method=sum 
+
+cd "C:\Users\juliana\Documents\RESULTADOS_DOUTORADO\Paisagens_Modelos_Smmal_Mammals\RESULTADOS_SMMALL\Resultados_Abertas\Imagens_soma"
+
+r.out.gdal in=corredores_18_sum_ab_h_m out=corredores_18_sum_ab_h_m.tif format=GTiff --v nodata=-9999
+
+
+
+#### Depois disso ele gera um mapa de distancia euclidiana da imagem resultado da soma
+
+g.region rast=corredores_18_sum_ab_h_m res=28.5
+
+r.grow.distance in=corredores_18_sum_ab_h_m  distance=corredores_18_sum_ab_h_m_tif_distance -m
+
+cd "C:\Users\juliana\Documents\RESULTADOS_DOUTORADO\Paisagens_Modelos_Smmal_Mammals\RESULTADOS_SMMALL\Resultados_Abertas\Imagens_DISTANCE"
+
+r.out.gdal in=corredores_18_sum_ab_h_m_tif_distance out=corredores_18_sum_ab_h_m_distance.tif format=GTiff --v nodata=-9999
+
+
+###Paisagem com as pastas (AF) aberta fechada
+
+Ele faz a soma (mesmo script SOMA)
+
+### Depois ele pega o resultado da soma e faz uma operação binária
+
+Script BINÁRIO
+
+r.in.gdal in=corredores_18_sum_gen_a_f out=corredores_18_sum_gen_a_f
+
+g.region  rast=corredores_18_sum_gen_a_f res=28.5
+
+r.mapcalc "corredores_18_sum_gen_a_f_Final=if(corredores_18_sum_gen_a_f<1,null(),1)"
+
+
+cd "C:\Users\juliana\Documents\RESULTADOS_DOUTORADO\Paisagens_Modelos_Smmal_Mammals\RESULTADOS_SMMALL\Imagens_AF"
+
+
+r.out.gdal in=corredores_18_sum_gen_a_f_Final out=corredores_18_sum_gen_a_f_Final.tif format=GTiff --v 
+
+
+
+###Paisagem com as pastas (HET) heterogêneas
+
+Ele faz a soma (mesmo script SOMA)
+Ele faz o mesmo script (Binário)
+

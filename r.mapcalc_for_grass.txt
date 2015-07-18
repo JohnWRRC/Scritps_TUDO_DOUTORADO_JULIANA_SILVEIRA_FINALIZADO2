@@ -1,0 +1,18 @@
+
+cd "F:\data\john_pc2\projeto_modelagem_canastra\grass_modelo_custo1_alterado_maxent\newLocation\PERMANENT\cell"
+
+
+a=(bana laranja)
+b=(limao maca) 
+
+
+
+for i in "${a[@]}"
+do
+
+	x=$i
+	y="${b[$conti]}"
+	
+	conti=$conti+1
+done
+          

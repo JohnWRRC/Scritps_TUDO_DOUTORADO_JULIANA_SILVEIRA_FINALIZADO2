@@ -1,0 +1,16 @@
+cd "F:\data\Juliana_inpe\RESULTADOS_Smmal_Mammals\Imagens_Binarias_Distance\bins_het"
+files=*.tif
+
+for i in $files
+do
+out=`echo $i|awk '{gsub(".tif","_tif");print}'`
+r.in.gdal in=$i out=$out -o --o
+done
+
+export=`g.mlist pattern="*final"`
+for a in $export
+do
+g.region rast=$a
+out=`echo $a|awk '{gsub("final","final.tif");print}'`
+r.out.gdal in=$a out=$out format=GTiff nodata=-9999 --v
+done
